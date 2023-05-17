@@ -50,10 +50,13 @@ return {
     -- enable servers that you already have installed without mason
     servers = {
       -- "pyright"
+      "vhdl_ls"
     },
   },
 
   -- Configure require("lazy").setup() options
+  --
+  -- note: almost the same is in lua/astronvim/lazy.lua
   lazy = {
     defaults = { lazy = true },
     performance = {
