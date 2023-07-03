@@ -9,4 +9,11 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  "mfussenegger/nvim-dap-python",
+  ft = "python",
+  opts = {
+  },
+  config = function ()
+    require("dap-python").setup('~/venvs/debugpy/bin/python', opts)
+  end,
 }
