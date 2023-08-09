@@ -2,11 +2,12 @@
 return {
   opt = {
     -- set to true or false etc.
+    ignorecase = false, -- with * or #, smartcase is not used, and then ignorecase is just confusing. See :help star.
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
+    wrap = true, -- sets vim.opt.wrap
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
